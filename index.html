@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+    <a href="#home">🏠 Home</a>
+    <a href="#about">👤 About</a>
+    <a href="#skills">💻 Skills</a>
+    <a href="#projects">🚀 Projects</a>
+    <a href="#contact">📞 Contact</a>
+</nav>
+
+    <h1 id="home">Welcome to My Website</h1>
+    <a href="cv.pdf" download class="cv-button">
+    📄 Download CV
+</a>
+
+    <img src="images/IMG_20240923_174800_741.webp" 
+         alt="My Photo" 
+         width="250">
+
+    <h2>Sampat</h2>
+
+    <p class="intro">
+    नमस्ते! 🙏 मैं Sampat हूँ।
+    यह मेरी personal website है।
+</p>
+    <div class="about" id="about"></div>
+    <h2>About Me</h2>
+    <p>
+        Hello! My name is Sampat.
+        Welcome to my personal website.
+        यहाँ आप मेरे बारे में जानकारी और मुझसे संपर्क कर सकते हैं।
+    </p>
+</div>
+
+<div class="contact" id="contact"></div>
+    <h2>Contact Me</h2>
+
+    <a href="https://wa.me/918769860087" target="_blank">
+    💬 WhatsApp
+</a>
+
+<a href="https://www.instagram.com/sampatsingh.sodha09/" target="_blank">
+    📸 Instagram
+</a>
+
+<a href="mailto:sampatsaasodha1234@gmail.com">
+    📧 Email
+</a>
+<form class="contact-form" onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+
+    <input type="email" placeholder="Your Email" required>
+
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">📨 Send Message</button>
+
+    <p id="formMessage"></p>
+</form>
+</div>
+<button id="modeButton" onclick="toggleMode()">🌙 Dark Mode</button>
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "Welcome to my website! 🎉";
+        }
+    </script>
+    <script>
+    function sendMessage(event) {
+        event.preventDefault();
+
+        document.getElementById("formMessage").innerText =
+            "Message sent successfully! 🎉";
+    }
+</script>
+<script src="script.js"></script>
+<div class="skills" id="skills"></div>
+    <h2>My Skills</h2>
+
+    <div class="skill-box">
+        <span>💻 HTML</span>
+        <div class="progress">
+            <div class="progress-bar html">90%</div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <span>🎨 CSS</span>
+        <div class="progress">
+            <div class="progress-bar css">80%</div>
+        </div>
+    </div>
+
+    <div class="skill-box">
+        <span>⚡ JavaScript</span>
+        <div class="progress">
+            <div class="progress-bar javascript">70%</div>
+        </div>
+    </div>
+</div>
+<div class="projects" id="projects"></div>
+    <h2>🚀 My Projects</h2>
+
+    <div class="project-box">
+        <h3>🌐 My Personal Website</h3>
+        <p>यह मेरी पहली personal website है।</p>
+        <a href="#" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-box">
+        <h3>💻 HTML & CSS Project</h3>
+        <p>मैं HTML और CSS से websites बनाना सीख रहा हूँ।</p>
+        <a href="#" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-box">
+        <h3>⚡ JavaScript Project</h3>
+        <p>JavaScript से website में interactive features जोड़ रहा हूँ।</p>
+        <a href="#" target="_blank">View Project →</a>
+    </div>
+</div>
+<div class="services">
+    <h2>🛠️ My Services</h2>
+
+    <div class="service-box">
+        <h3>💻 Website Design</h3>
+        <p>मैं simple और attractive websites बनाना सीख रहा हूँ।</p>
+    </div>
+
+    <div class="service-box">
+        <h3>🎨 UI Design</h3>
+        <p>मैं websites को सुंदर और user-friendly बनाने पर काम करता हूँ।</p>
+    </div>
+
+    <div class="service-box">
+        <h3>⚡ JavaScript Features</h3>
+        <p>मैं JavaScript से websites में interactive features जोड़ता हूँ।</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Sampat. All Rights Reserved.</p>
+</footer>
+
+<button id="topButton" onclick="goToTop()">⬆️ Top</button>
+</body>
+</html>
