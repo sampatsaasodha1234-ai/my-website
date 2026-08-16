@@ -1021,3 +1021,149 @@ h2:hover {
 html {
     scroll-behavior: smooth;
 }
+/* =========================
+   📱 MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 9px 12px;
+    }
+
+    /* Main heading */
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        margin: 35px 15px 20px;
+    }
+
+    /* Profile image */
+    img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* Headings */
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Paragraphs */
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* About / Contact / Skills / Projects */
+    .about,
+    .contact,
+    .skills,
+    .projects,
+    .services {
+        width: 90%;
+        margin: 40px auto;
+        box-sizing: border-box;
+    }
+
+    /* Project cards */
+    .projects {
+        display: block;
+    }
+
+    .project-box {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 22px;
+    }
+
+    /* Service cards */
+    .services {
+        display: block;
+    }
+
+    .service-box {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 22px;
+    }
+
+    /* Skills */
+    .skill-box {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    /* Contact form */
+    .contact-form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    /* CV button */
+    .cv-button {
+        display: inline-block;
+        margin: 15px auto;
+    }
+
+    /* Dark mode button */
+    #modeButton {
+        right: 15px;
+        bottom: 70px;
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    /* Top button */
+    #topButton {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .project-box,
+    .service-box {
+        padding: 18px;
+    }
+}
