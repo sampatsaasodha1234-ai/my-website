@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sampatsaasodha1234-ai.github.io/my-website/sitemap.xml
