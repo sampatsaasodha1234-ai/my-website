@@ -14,12 +14,14 @@ function toggleMode() {
         button.innerText = "🌙 Dark Mode";
     }
 }
+
 function goToTop() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 }
+
 window.addEventListener("scroll", function () {
     const topButton = document.getElementById("topButton");
 
